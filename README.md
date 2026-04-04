@@ -6,6 +6,15 @@
 - Routing of App
 - Login form
 - Form Validation
+- useRef hook
+- Firebase setup
+- Firebase
+- Deploying our app to production
+- Create signup user account in firebase
+- Implement sign in user API
+- Created redux store with userSlice
+- Implemented signout
+- Update profile api call
 
 # Features
 
