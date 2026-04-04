@@ -3,7 +3,9 @@
 - Create React APp
 - Configured TailwindCSS
 - Header
+- Routing of App
 - Login form
+- Form Validation
 
 # Features
 
