@@ -1,11 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import './index.css';
+import React from 'react';
+import Body from './components/Body';
 function App() {
   return (
-    <div className="text-3xl font-bold underline text-red-500">
-      Namaste everyone, lets build Netflix GPT together!
-    </div>
+    <Body />
   );
 }
 

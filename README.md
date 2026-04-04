@@ -2,6 +2,8 @@
 
 - Create React APp
 - Configured TailwindCSS
+- Header
+- Login form
 
 # Features
 
