@@ -18,5 +18,4 @@ const SecondaryContainer = () => {
         </div>
     )
 }
-
 export default SecondaryContainer

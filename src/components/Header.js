@@ -7,6 +7,7 @@ import { addUser, removeUser } from '../utils/userSlice';
 import { onAuthStateChanged } from 'firebase/auth';
 import { useEffect } from 'react';
 import { LOGO, BACKGROUND_IMG } from '../utils/constant';
+import { toggleGPTSearchView } from '../utils/GPTSlice';
 const Header = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -34,6 +35,9 @@ const Header = () => {
             navigate("/error");
         });
     }
+    const handleGPTSearchClick = () => {
+        dispatch(toggleGPTSearchView());
+    }
     return (
         <div className='absolute flex justify-between bg-gradient-to-b from-black/70 w-full z-10'>
             <div className=' px-8 py-2 '>
@@ -42,9 +46,10 @@ const Header = () => {
             {
                 user &&
 
-                <div className='flex gap-4 p-2 align-center justify-center w-40'>
+                <div className='flex gap-4 p-2 align-center justify-center w-100 align-middle mx-4'>
+                    <button className='py-1 px-4 h-12 bg-purple-600 text-white rounded-md' onClick={handleGPTSearchClick}>GPT Search</button>
                     <img className="w-12 h-12" src={BACKGROUND_IMG} />
-                    <button className='font-bold text-white' onClick={handleSignOut}>Sign Out</button>
+                    <button className='font-bold text-white  h-12' onClick={handleSignOut}>Sign Out</button>
                 </div>
             }
 

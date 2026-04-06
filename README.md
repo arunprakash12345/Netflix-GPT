@@ -34,6 +34,7 @@
 - Build movie cards
 - Made the browse page amazing
 - Use popular movies custom hook
+- Search feature
 
 # Features
 
